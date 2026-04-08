@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elvisdesign - Design Graphique & Solutions Web Professionnel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <span class="icon">≡</span>ELVIS DESIGN
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#qui-suis-je" class="nav-link">Qui-suis-je ?</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#temoignages" class="nav-link">Témoignages</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+        </nav>
+        <button class="btn-primary" id="loginBtn">Connexion ➔</button>
+    </header>
+
+    <main class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Là où la créativité rencontre <strong>la précision professionnelle.</strong></h1>
+            <p>J'accompagne les entreprises, les marques et les particuliers dans la conception de leur identité visuelle, la réalisation de supports graphiques et le développement de solutions informatiques adaptées à leurs besoins.</p>
+            <p>Mon objectif est simple : transformer vos idées en projets concrets, efficaces et esthétiques.</p>
+            <p>Que ce soit pour un logo, un site web, une affiche ou une application, je vous propose un travail professionnel, créatif et orienté résultats.</p>
+            <div class="hero-cta">
+                <button class="btn-primary large" onclick="scrollToServices()">Demander un devis</button>
+                <button class="btn-outline" onclick="scrollToPortfolio()">Voir le portfolio ↗</button>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="IMG_1502 copieh.jpg" alt="Elvisdesign - Designer professionnel" loading="lazy">
+            <div class="floating-icons"></div>
+        </div>
+    </main>
+
+    <section class="trust-section">
+        <h2 class="trust-title">Ils nous font confiance</h2>
+        <div class="marquee">
+            <div class="marquee-content">
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=1" alt="Ubuntu Cybernet" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Ubuntu Cybernet <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Expert IA & Prompt Engineer</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=2" alt="Ets. Endurance" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Ets. Endurance <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Coach nutritionnel en ligne</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=3" alt="Muso Creation" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Muso Creation <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Psycho-thérapeute</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=4" alt="Kas Bank Sarl" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Kas Bank Sarl <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Services bancaires</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=5" alt="La Benediction Sarlu" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">La Benediction Sarlu <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Événementiel</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=6" alt="Hotel Vyoke" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Hotel Vyoke <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Hôtellerie & Tourisme</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=7" alt="Elvicom" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Elvicom <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Solutions IT</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=8" alt="Jeunes Visionnaires" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Jeunes Visionnaires de Goma <span class="verify-badge">✓</span></div>
+                        <div class="client-job">ONG - Développement</div>
+                    </div>
+                </div>
+                <div class="client-card">
+                    <img src="https://i.pravatar.cc/150?u=9" alt="Kwetu Prod" class="client-avatar">
+                    <div class="client-info">
+                        <div class="client-name">Kwetu Prod <span class="verify-badge">✓</span></div>
+                        <div class="client-job">Entrepreneur/Coach</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="qui-suis-je">
+        <div class="about-card">
+            <div class="about-image-wrapper">
+                <img src="ed.jpg" alt="Elvis Design - Fondateur" class="profile-img" loading="lazy">
+            </div>
+
+            <div class="about-content">
+                <h2 class="about-title">Qui-suis-je ?</h2>
+                <p class="intro-text">
+                    Je suis <span class="highlight">Elvis Design</span>, CEO de Elvicom et expert en conception visuelle, animé par une véritable passion pour le design graphique.
+                </p>
+                <div class="quote-box">
+                    <p>Avec plus de 500 projets réalisés, j'ai développé un sens aigu du détail ainsi qu'une forte capacité à comprendre les besoins spécifiques de chaque client. Mon approche consiste à transformer des idées simples en identités visuelles puissantes, modernes et mémorables.</p>
+                    <p>Chaque projet est pour moi une opportunité de créer une image unique qui reflète l'essence d'une marque et capte l'attention de son audience.</p>
+                </div>
+                <p class="final-text">
+                    Au-delà de la création, je m'engage également à transmettre mon savoir-faire. J'accompagne les apprenants avec rigueur, écoute et suivi personnalisé, afin de les aider à développer leurs compétences et à atteindre un niveau professionnel dans le domaine du design graphique.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="comparison-section" id="services">
+        <div class="container">
+            <div class="service-badge"><h1>Services</h1></div>
+            <h2 class="title-main">Pourquoi travailler avec moi ?</h2>
+            <p class="subtitle">Choisissez un partenaire qui maximise vos conversions et crée des résultats concrets.</p>
+
+            <div class="comparison-grid">
+                <div class="comparison-card positive">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="icon-check">✔</span>
+                            <div>
+                                <h4>Des designs sur-mesure et uniques</h4>
+                                <p>Chaque création est pensée spécifiquement pour votre marque. Pas de modèles génériques, uniquement du design original qui vous démarque.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-check">✔</span>
+                            <div>
+                                <h4>Design orienté impact visuel</h4>
+                                <p>Chaque visuel est conçu pour capter l'attention, renforcer votre image et marquer les esprits.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-check">✔</span>
+                            <div>
+                                <h4>Tarifs transparents</h4>
+                                <p>Aucun frais caché, tout est clair dès le départ avec des modifications illimitées.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comparison-card negative">
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <span class="icon-cross">✔</span>
+                            <div>
+                                <h4>Créativité + stratégie</h4>
+                                <p>Je combine l'esthétique et la réflexion pour créer une identité visuelle cohérente et efficace.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-cross">✔</span>
+                            <div>
+                                <h4>Accompagnement complet</h4>
+                                <p>De la conception au déploiement, je vous guide à chaque étape du projet.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="icon-cross">✔</span>
+                            <div>
+                                <h4>Accompagnement personnalisé</h4>
+                                <p>Je vous guide à chaque étape pour garantir un résultat professionnel qui correspond parfaitement à votre vision.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-wrapper">
+                <button class="btn-primary" onclick="scrollToServices()">Je veux un design sur mesure ➔</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio-title">Des exemplaires de ce que tu sauras faire :</h2>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_HBD_~Sarsi Lukogho copie.jpg" alt="Design Flyer Anniversaire" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="totebag copie.jpg" alt="Design Totebag" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="_business_card_ SILAS RECTO-VERSO copie.jpg" alt="Design Carte de visite" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_COUVERTURE MAGAZINE ALINE copie.jpg" alt="Design Couverture Magazine" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_CLOVING SLAP SLDT 1 copie.jpg" alt="Design Flyer Événement" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_BASKETBAL UCBC copie.jpg" alt="Design Affiche Sports" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_BACHE UBUNTU.jpg" alt="Design Bâche" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_ PHOTOS PORTRAIT copie.jpg" alt="Design Portrait" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Hoodie_Mockup copie 2.jpg" alt="Design Merchandise Hoodie" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_ JOYEUX NOEL ET BONNE ANNEE CLIENTS copie.jpg" alt="Design Voeux" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_ EXCURSION UCBC NAIROBI copie.jpg" alt="Design Événement" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_FLYER_ AKILI NADYA copie.jpg" alt="Design Projet" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_Flyer _THANK YOU 5K FABRAAH_T copie.jpg" alt="Design Remerciements" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_Flyer _POLO SLDT copie.jpg" alt="Design Polo" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Cover_Flyer _HAPPY BIRTHDAY REBECCA 1 copie.jpg" alt="Design Anniversaire" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="LOGO.jpg" alt="Design Logo" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Plan de travail 4.jpg" alt="Design Additionnel" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Polo Shirt Mockup.jpg" alt="Design Polo Mockup" loading="lazy">
+                    <div class="overlay"><span>Voir le projet</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section" id="temoignages">
+        <div class="container">
+            <h2 class="section-title">⭐ Ce que disent nos clients</h2>
+            <p class="testimonials-subtitle">Plus de 500 clients satisfaits qui nous font confiance</p>
+
+            <div class="testimonials-grid">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=10" alt="Jean-Pierre Michel">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Jean-Pierre Michel</h3>
+                            <p>PDG - Kas Bank Sarl</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Je suis vraiment satisfait du travail réalisé sur mon logo. Le rendu final dépasse largement mes attentes, avec un design à la fois moderne et professionnel. Elvis a su être à l'écoute de mes besoins et proposer des idées créatives qui ont fait toute la différence. Le travail a été réalisé avec sérieux et dans les délais. Chez Elvis Design, c'est le vrai professionnalisme. Je recommande vivement ses services."
+                    </p>
+                </div>
+
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=11" alt="Sarah Dupont">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Sarah Dupont</h3>
+                            <p>Coach Nutritionnel - Ets. Endurance</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis a transformé ma vision en réalité. Son approche créative et son attention aux détails sont impressionnantes. Les designs qu'il crée captivent mes clients et reflètent parfaitement mon brand. Un vrai professionnel qui comprend vraiment les enjeux du marketing moderne."
+                    </p>
+                </div>
+
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=12" alt="Marc Leblanc">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Marc Leblanc</h3>
+                            <p>Entrepreneur - Ubuntu Cybernet</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Travailler avec Elvis Design a été un tournant pour notre entreprise. Ses créations nous ont permis d'augmenter notre visibilité de 300%. Je suis tellement impressionné par la qualité et la créativité qu'il apporte à chaque projet."
+                    </p>
+                </div>
+
+                <!-- Témoignage 4 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=13" alt="Amélie Martin">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Amélie Martin</h3>
+                            <p>Thérapeute - Muso Creation</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Les designs d'Elvis m'ont permis de créer une identité professionnelle forte. Ses conseils vont bien au-delà de simples créations graphiques. C'est un véritable partenaire stratégique pour mon business."
+                    </p>
+                </div>
+
+                <!-- Témoignage 5 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=14" alt="Laurent Rousseau">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Laurent Rousseau</h3>
+                            <p>Directeur - Hotel Vyoke</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis a révolutionné notre présence sur le marché. Ses créations sont sophistiquées, élégantes et totalement alignées avec notre vision. Les clients complimentent régulièrement nos matériels de marketing."
+                    </p>
+                </div>
+
+                <!-- Témoignage 6 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=15" alt="Kristine Belfort">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Kristine Belfort</h3>
+                            <p>PDG - La Benediction Sarlu</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis Design est un vrai talent. Son portfolio parle pour lui. Nous avons eu plusieurs événements que Elvis a graphiquement améliorés. Son travail attire toujours l'attention. Recommandé sans hésitation!"
+                    </p>
+                </div>
+
+                <!-- Témoignage 7 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=16" alt="David Kasongo">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>David Kasongo</h3>
+                            <p>Responsable IT - Elvicom</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "En tant que CEO d'Elvicom, je peux affirmer qu'Elvis est le meilleur designer que nous ayons jamais engagé. Son expertise en design UI/UX a transformé nos projets web. Un investissement qui vaut vraiment le coup."
+                    </p>
+                </div>
+
+                <!-- Témoignage 8 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=17" alt="Catherine Mfumu">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Catherine Mfumu</h3>
+                            <p>Coordinatrice - Jeunes Visionnaires Goma</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis a aidé notre ONG à créer une identité visuelle cohérente et impactante. Ses designs nous ont permis de mieux communiquer notre mission. Un vrai professionnel engagé dans ses projets."
+                    </p>
+                </div>
+
+                <!-- Témoignage 9 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=18" alt="Patrick Kabila">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Patrick Kabila</h3>
+                            <p>Entrepreneur - Kwetu Prod</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "J'ai engagé Elvis pour plusieurs projets et il ne m'a jamais déçu. Sa capacité à transformer une simple idée en un concept visuel magnifique est incroyable. Je le recommande à tous mes partenaires commerciaux."
+                    </p>
+                </div>
+
+                <!-- Témoignage 10 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=19" alt="Nicole Assanda">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Nicole Assanda</h3>
+                            <p>Directrice Marketing - Tech Solutions</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "La qualité du travail d'Elvis est incomparable. Ses designs ne sont pas seulement beaux, ils sont stratégiquement pensés pour convertir. Notre ROI a augmenté considérablement depuis."
+                    </p>
+                </div>
+
+                <!-- Témoignage 11 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=20" alt="Robert Nzambi">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Robert Nzambi</h3>
+                            <p>Fondateur - Digital Visions</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis Design n'est pas juste un designer, c'est un visionnaire. Il comprend les tendances du marché et crée des designs qui restent intemporels. Un partenaire essentiel pour notre agence."
+                    </p>
+                </div>
+
+                <!-- Témoignage 12 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=21" alt="Véronique Laurent">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Véronique Laurent</h3>
+                            <p>CEO - Fashion & Style Boutique</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Nous avons choisi Elvis pour notre rebrand et c'était la meilleure décision. Ses créations ont totalement transformé notre image de marque. Les ventes ont grimpé de façon impressionnante."
+                    </p>
+                </div>
+
+                <!-- Témoignage 13 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=22" alt="Franck Diamant">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Franck Diamant</h3>
+                            <p>Directeur Créatif - Agence Pro</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "J'ai collaboré avec Elvis sur plusieurs projets. Son professionnalisme, sa rigueur et sa créativité sont exemplaires. C'est l'un des meilleurs designers avec qui j'ai travaillé."
+                    </p>
+                </div>
+
+                <!-- Témoignage 14 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=23" alt="Suzanne Muamba">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Suzanne Muamba</h3>
+                            <p>Manager - Consulting Excellence</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis a créé une identité de marque exceptionnelle pour notre cabinet de conseil. Ses designs reflètent parfaitement nos valeurs professionnelles. Nos clients sont impressionnés."
+                    </p>
+                </div>
+
+                <!-- Témoignage 15 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=24" alt="Michaël Tshikumba">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Michaël Tshikumba</h3>
+                            <p>Responsable RH - Human Resources Plus</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Nous avons engagé Elvis pour refondre nos supports de communication interne et externe. Le résultat est magnifique et professionnellement irréprochable. Je le recommande chaudement."
+                    </p>
+                </div>
+
+                <!-- Témoignage 16 -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="testimonial-avatar">
+                            <img src="https://i.pravatar.cc/150?u=25" alt="Hélène Beaumont">
+                        </div>
+                        <div class="testimonial-info">
+                            <h3>Hélène Beaumont</h3>
+                            <p>Présidente - Beauty & Wellness Group</p>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="testimonial-text">
+                        "Elvis a redéfini notre présence visuelle. Ses créations sont élégantes, sophistiquées et totalement adaptées à notre secteur. Nous voyons une augmentation significative de notre engagement client."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section" id="faq">
+        <div class="container">
+            <div class="faq-header">
+                <span class="faq-badge">Foire aux questions</span>
+                <h2 class="faq-title">Les questions fréquemment posées !</h2>
+            </div>
+
+            <div class="faq-list">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Qu'est-ce que le design graphique et pourquoi en avez-vous besoin ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Le design graphique est l'art de communiquer visuellement vos idées et votre message à votre audience. Chez <strong>Elvis Design</strong>, nous créons des visuels professionnels qui renforcent votre identité de marque, captivent vos clients et génèrent des conversions. C'est un investissement stratégique pour la croissance de votre business.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Quels types d'identités visuelles créez-vous ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Je crée des identités complètes et cohérentes : logos, chartes graphiques, supports marketing (flyers, affiches, cartes de visite), designs web, packaging, et bien d'autres. L'objectif est de rendre votre marque mémorable, professionnelle et cohérente sur tous les supports numériques et imprimés.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Combien de temps faut-il pour créer une identité visuelle complète ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>En général, un projet standard prend entre <strong>2 à 5 jours ouvrés</strong>, incluant la phase de stratégie, les concepts de design, les révisions, et la livraison finale. Les projets plus complexes peuvent prendre 20-30 jours selon les exigences spécifiques.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Offrez-vous des révisions après la livraison ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolument ! Chaque projet inclut une phase complète de révisions (généralement 3-5 itérations) pour garantir que le rendu final correspond parfaitement à votre vision et dépasse vos attentes. La satisfaction du client est ma priorité absolue.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Quels sont vos tarifs et comment fonctionne le paiement ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Mes tarifs sont transparents et adaptés à votre budget. Un petit logo peut coûter entre 50$ à 150$, une identité visuelle complète entre 300$ à 1000$ selon la complexité. Je propose généralement un paiement en deux phases : 50% à la signature du contrat et 50% à la livraison finale.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span class="faq-question-text">Pouvez-vous travailler sur mon concept ou votre propre idée ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oui, absolument ! Je peux travailler sur votre concept existant et l'améliorer, ou créer des concepts entièrement nouveaux basés sur votre brief et votre vision. J'adapte toujours mon approche à vos besoins spécifiques pour assurer un résultat qui dépasse vos attentes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-card">
+            <div class="cta-badge">Prêt à transformer votre business ?</div>
+            <h2>Vous êtes à un clic de prendre la meilleure décision pour <span>votre business !</span></h2>
+
+            <p class="cta-text">
+                Confiez-moi la création de vos interfaces et concentrez-vous sur votre zone de génie.
+                Je m'occupe de la partie design et technique pour vous !
+            </p>
+
+            <a href="#" class="cta-button">
+                Demander un devis gratuit
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>Réalisé avec passion 💙 par <strong>Elvis Design</strong></p>
+            <p class="copyright">Copyrights © 2026 | Elvis Design | Tout droit réservé</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
